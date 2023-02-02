@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Module 2 Coding Assignment: Shawn Chinnanon</title>
+
+<style>
+
+body {
+	font-family: "Helvetica", Arial, sans-serif;
+	font-size: 125%;
+	margin: 40px;
+}
+
+h1 {
+	color: black;
+	font-size: 175%;
+	text-align: center;	
+	font-family: "Helvetica", Arial, sans-serif;
+	margin-bottom: 60px;
+	margin-top: 40px;
+}
+
+.section-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.section {
+  	width: 30%;
+  	padding: 20px;
+  	margin-bottom: 20px;
+  	background-color: #D9D9D9;
+  	border: 1px solid black;
+ 	box-sizing: border-box;
+ 	position: relative;
+}
+.section-sushi {
+  	width: 30%;
+ 	padding: 20px;
+  	margin-bottom: 20px;
+  	background-color: #D9D9D9;
+  	border: 1px solid black;
+  	box-sizing: border-box;
+  	position: relative;
+}
+
+.section-title1 {
+  	position: absolute;
+  	top: 0px;
+  	right: 0px;
+  	background-color: #FF9082;
+  	border: 1px solid black;
+  	padding: 10px;
+  	text-align: center;
+  	min-width: 80px;
+}
+
+.section-title2 {
+  	position: absolute;
+  	top: 0px;
+  	right: 0px;
+  	color: white;
+  	background-color: #CA4D2B;
+  	border: 1px solid black;
+  	padding: 10px;
+  	text-align: center;
+  	min-width: 80px;
+}
+
+.section-title3 {
+  	position: absolute;
+  	top: 0px;
+  	right: 0px;
+ 	background-color: #FADF88;
+  	border: 1px solid black;
+  	padding: 10px;
+  	text-align: center;
+  	min-width: 80px;
+}
+
+p {
+	margin-top: 40px;
+	color: black;
+  	font-family: "Helvetica", Arial, sans-serif;
+  	text-align: justify;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+  	.section {
+    	width: 33%;
+   		margin-right: 0px;
+  	}
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  	.section {
+    	width: 49%;
+    	float: left;
+  	}
+  	.section-sushi {
+    	clear: both;
+    	width: 100%;
+  	}
+}
+
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+  	.section {
+    	width: 100%;
+    	float: none;
+  	}
+   	.section-sushi {
+    	width: 100%;
+    	float: none;
+  	}
+}
+
+</style>
+</head>
+
+<body>
+    <h1>Our Menu</h1>
+    <div>
+  <div class="section-container">
+    <div class="section chicken">
+    	<div class="section-title1">Chicken</div>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="section beef">
+      	<div class="section-title2">Beef</div>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="section-sushi">
+      	<div class="section-title3">Sushi</div>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+</body>
+</html>
